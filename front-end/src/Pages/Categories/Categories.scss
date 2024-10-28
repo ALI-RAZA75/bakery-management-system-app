@@ -1,0 +1,147 @@
+.categories {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+  
+    .tabHeading {
+      margin-bottom: 10px;
+      font-size: 16px;
+      font-weight: bold;
+      color: #333;
+  
+      &:hover {
+        color: #40189d;
+      }
+    }
+  
+    .tabOne {
+      padding: 0;
+    }
+  
+    .categoriesTable {
+      max-height: 58vh;
+      overflow-y: auto;
+      scrollbar-width: none;
+  
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 30px;
+  
+        .tableHeader {
+          background-color: #f1f1f1;
+          color: black;
+          font-weight: 500;
+          padding: 10px;
+          text-align: left;
+          position: sticky;
+          top: 0;
+          z-index: 1;
+        }
+  
+        .tableCell {
+          border: none;
+          border-bottom: 1px solid grey;
+          padding: 10px;
+          color: black;
+          .rowData {
+            width: 100%;
+            background: #fff;
+            
+          }
+          
+  
+          .editBtn,
+          .deleteBtn {
+            margin-right: 10px;
+            padding: 5px 10px;
+            font-size: 0.875rem;
+            color: white;
+            background-color: #40189d;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+  
+            &:hover {
+              background-color: #341378;
+            }
+          }
+  
+          .deleteBtn {
+            background-color: #d9534f;
+  
+            &:hover {
+              background-color: #c9302c;
+            }
+          }
+        }
+        .lightGrey{
+          border: none;
+          border-bottom: 1px solid grey;
+          padding: 10px;
+        }
+      }
+    }
+  
+    .formDiv {
+      display: flex;
+      justify-content: space-around;
+      margin-bottom: 30px;
+  
+      .formInnerDiv {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-right: 15px;
+  
+        .formLabel {
+          margin-bottom: 0.5rem;
+          font-weight: 500;
+          color: black;
+        }
+  
+        .formInput {
+          border-radius: 5px;
+          background: #fff;
+          border: 1px solid #dbdbdb;
+          color: black;
+          padding: 10px 15px;
+          height: 40px;
+  
+          &:focus {
+            border-color: #40189d;
+            outline: none;
+            box-shadow: 0 0 5px rgba(64, 24, 157, 0.5); 
+          }
+        }
+      }
+    }
+  
+    .submitBtnDiv {
+      display: flex;
+      justify-content: end;
+      margin-right: 15px;
+  
+      .submitBtn {
+        padding: 14px 42px;
+        margin-bottom: 0.5rem;
+        font-weight: 600;
+        color: white;
+        background: #40189d;
+        border: 1px solid lightgrey;
+        cursor: pointer;
+        outline: none;
+  
+        &:hover {
+          background-color: #341378;
+        }
+      }
+    }
+  
+    .error {
+      color: #d9534f;
+      font-size: 0.85rem;
+      margin-top: 5px;
+    }
+  }
+  

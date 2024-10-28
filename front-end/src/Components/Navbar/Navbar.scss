@@ -1,0 +1,79 @@
+.navbar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #40189e;
+  padding: 0;
+  .nav-left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 15%;
+    padding: 15px;
+    .logo {
+      font-weight: bold;
+      font-size: 35px;
+      gap: 10px;
+      color: white;
+    }
+  }
+  .nav-right {
+    width: 85%;
+    background: #f2f2f2;
+    padding: 25px;
+    border-radius: 57px 0px 0px 0px;
+    .icons {
+      display: flex;
+      justify-content: end;
+      align-items: center;
+      gap: 20px;
+      background-color: #f2f2f2;
+
+      // .notification {
+      //   position: relative;
+      //   span {
+      //     background-color: red;
+      //     color: white;
+      //     width: 16px;
+      //     height: 16px;
+      //     border-radius: 50px;
+      //     position: absolute;
+      //     top: -10px;
+      //     right: -10px;
+      //     display: flex;
+      //     align-items: center;
+      //     justify-content: center;
+      //     font-size: 12px;
+      //   }
+      // }
+
+      .userDiv {
+        display: flex;
+        align-items: center;
+        gap: 25px;
+        padding-right: 20px;
+
+        img {
+          width: 75px;
+          height: 75px;
+          border-radius: 50%;
+          object-fit: cover;
+        }
+        .profileTitle {
+          display: flex;
+          flex-direction: column;
+          .profileTitleName{
+            font-size: 20px;
+            font-weight: 500;
+            color: black;
+          }
+        }
+        .logOut{
+            font-size: 30px;
+            color: black;
+        }
+      }
+    }
+  }
+}

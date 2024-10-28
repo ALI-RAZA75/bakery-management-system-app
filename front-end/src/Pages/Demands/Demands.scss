@@ -1,0 +1,98 @@
+.demands {
+  background: #f9f9f9;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  height: 72vh;
+  overflow: auto;
+  scrollbar-width: none;
+
+  .MuiTab-root {
+    font-weight: bold;
+    // color: #40189d;
+    // border-bottom: 2px solid #40189d;
+  }
+
+  .MuiTabPanel-root {
+    padding: 0px;
+  }
+  .demand-form {
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+
+    .formDiv {
+      display: flex;
+      justify-content: space-around;
+      margin-bottom: 30px;
+
+      .formInnerDiv {
+        
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 0px 15px 0px 0px;
+
+        input[readonly] {
+          background-color: #f0f0f0; 
+          cursor: not-allowed;
+      }
+
+        .formLabel {
+          margin-bottom: 0.5rem;
+          font-weight: 600;
+          color: #333;
+        }
+
+        .formInput {
+          border-radius: 5px;
+          background: #fff;
+          border: 1px solid #dbdbdb;
+          color: #333;
+          padding: 10px 15px;
+          height: 40px;
+
+          &:focus {
+            border-color: #40189d;
+            outline: none;
+            box-shadow: 0 0 5px rgba(64, 24, 157, 0.5);
+          }
+        }
+      }
+    }
+
+    .demandBtnDiv {
+      display: flex;
+      justify-content: flex-end;
+      margin-top: 15px;
+
+      .submitBtn {
+        padding: 10px 20px;
+        background-color: #40189d;
+        font-weight: bold;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+
+        &:hover {
+          background-color: #321478;
+        }
+      }
+
+    }
+  }
+
+
+  .dataTable {
+    margin-top: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+
+    .MuiDataGrid-cell input{
+      padding: 6px;
+    }
+  }
+}
